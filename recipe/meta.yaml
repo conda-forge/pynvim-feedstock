@@ -18,6 +18,7 @@ build:
 requirements:
   host:
     - python
+    - pytest-runner
     - pip
   run:
     - python
