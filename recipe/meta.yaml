@@ -1,6 +1,6 @@
 {% set name = "pynvim" %}
-{% set version = "0.3.2" %}
-{% set sha256 = "cf6490c4e586c9da01a32f3e0ae21c61342d7ea171e06025bda210bdc95cbe05" %}
+{% set version = "0.4.0" %}
+{% set sha256 = "71fd8bb3285deeda8c259383066214e0d522a96bfb3ca4871333adfcb454e9d6" %}
 
 package:
   name: {{ name|lower }}
@@ -13,7 +13,7 @@ source:
 
 build:
   number: 0
-  script: python -m pip install --no-deps --ignore-installed .
+  script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
