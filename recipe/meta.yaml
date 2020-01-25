@@ -1,6 +1,6 @@
 {% set name = "pynvim" %}
-{% set version = "0.4.0" %}
-{% set sha256 = "71fd8bb3285deeda8c259383066214e0d522a96bfb3ca4871333adfcb454e9d6" %}
+{% set version = "0.4.1" %}
+{% set sha256 = "55e918d664654cfa1c9889d3dbe7c63e9f338df5d49471663f78d54c85e84c58" %}
 
 package:
   name: {{ name|lower }}
