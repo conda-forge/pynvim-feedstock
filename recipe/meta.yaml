@@ -28,7 +28,7 @@ requirements:
     - msgpack-python >=0.5.0
     - greenlet
     - trollius  # [py27]
-    - pyuv >=1.0.0  # [win]
+    - pyuv >=1.0.0  # [py2k and win]
 
 test:
   imports:
