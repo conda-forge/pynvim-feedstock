@@ -1,5 +1,5 @@
 {% set name = "pynvim" %}
-{% set version = "0.4.3" %}
+{% set version = "0.5.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,10 +7,10 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3a795378bde5e8092fbeb3a1a99be9c613d2685542f1db0e5c6fd467eed56dff
+  sha256: e80a11f6f5d194c6a47bea4135b90b55faca24da3544da7cf4a5f7ba8fb09215
 
 build:
-  number: 1
+  number: 0
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
