@@ -10,23 +10,24 @@ source:
   sha256: 0ffcb879322d08f9e9061e1123dd58ba3a5ccfbd4999bb1157bac525822aa590
 
 build:
-  number: 0
+  number: 1
   noarch: python
   script: {{ PYTHON }} -m pip install . --no-deps -vv
 
 requirements:
   host:
-    - python >=3.4
+    - python {{ python_min }}
     - pytest-runner
     - pip
   run:
-    - python >=3.4
+    - python >={{ python_min }}
     - msgpack-python >=0.5.0
     - greenlet
 
 test:
   requires:
     - pip
+    - python {{ python_min }}
   commands:
     - pip check
   imports:
