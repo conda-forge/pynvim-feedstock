@@ -13,7 +13,6 @@ Development: https://github.com/neovim/pynvim
 
 Python client to neovim
 
-
 Current build status
 ====================
 
